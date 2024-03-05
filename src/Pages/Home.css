@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5% 1%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 2%;
+  margin-top: 50px;
+}
+
+.left-side {
+  width: calc(70% - 10px); /* Adjusted width to account for padding */
+  background-color: transparent;
+}
+
+.right-side {
+  width: calc(30% - 10px); /* Adjusted width to account for padding */
+  height: 100px;
+  background-color: rgb(32, 32, 252);
+}
+
+.box1 {
+  flex: 1;
+  width: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabs {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 3%;
+  border-bottom: 1px solid #d8dadc;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.scroll-content ::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.tab {
+  padding: 1% 0%;
+}
+
+.tabName {
+  color: #606060;
+  font-size: 12;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2% 2%;
+  }
+  .left-side,
+  .right-side {
+    flex-basis: 100%; /* Set to 100% for smaller screens to make them stack */
+  }
+  .right-side {
+    margin-top: 3%;
+  }
+  .tab {
+    padding: 1% 5%;
+  }
+}

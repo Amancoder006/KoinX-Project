@@ -1,0 +1,26 @@
+.graph-container {
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+.graph {
+  height: 500px;
+  width: 100%;
+  flex: 1;
+}
+
+.bitcoinLogo {
+  margin-right: 0.5%;
+  align-items: center;
+}
+.bitcoinLogo img {
+  height: 50px;
+  width: 50px;
+}
+
+.heading {
+  font-size: 28px;
+  color: #000;
+  font-weight: 600;
+  align-items: center;
+}
