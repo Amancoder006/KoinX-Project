@@ -11,12 +11,12 @@
 }
 
 .left-side {
-  width: calc(70% - 10px); /* Adjusted width to account for padding */
+  width: calc(67% - 10px);
   background-color: transparent;
 }
 
 .right-side {
-  width: calc(30% - 10px); /* Adjusted width to account for padding */
+  width: calc(33% - 10px);
   height: 100px;
   background-color: rgb(32, 32, 252);
 }

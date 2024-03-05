@@ -1,8 +1,9 @@
+import { useState } from "react";
 import "./Home.css";
 import NavBar from "../Components/NavBar";
 import Graph from "../Components/Graph";
 import Performance from "../Components/Performance";
-import { useState } from "react";
+import Sentiments from "../Components/Sentiments";
 
 const tabs = [
   "Overview",
@@ -67,6 +68,11 @@ const Home = () => {
           {/* performance */}
           <div className="box1" style={{ marginTop: "2%" }}>
             <Performance />
+          </div>
+
+          {/* Sentiments */}
+          <div className="box1" style={{ marginTop: "2%" }}>
+            <Sentiments />
           </div>
         </div>
         <div className="right-side"></div>

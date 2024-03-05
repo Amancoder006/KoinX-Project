@@ -14,6 +14,7 @@ const Navbar = () => {
       <div className="navbar-logo">
         <img src={Logo} alt="Logo" />
       </div>
+      
       <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
         <li>
           <a href="#">Crypto Taxes</a>

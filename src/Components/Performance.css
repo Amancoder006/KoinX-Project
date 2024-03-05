@@ -26,6 +26,25 @@
   color: #606060;
   font-weight: 500;
 }
+
+.text3 {
+  font-size: 20px;
+  color: #606060;
+  font-weight: 500;
+}
+
+.text4 {
+  color: #909090;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.text5 {
+  color: #424242;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
 .range-price {
   margin-left: 70%;
   color: #202020;
@@ -44,4 +63,43 @@
   width: 100%;
   background: linear-gradient(to right, red, yellow, green);
   border-radius: 8px;
+}
+
+.fundamental-container {
+  margin-top: 2%;
+}
+
+.title {
+  align-items: center;
+}
+
+.title img {
+  height: 20px;
+  width: 20px;
+  margin-left: 1%;
+}
+
+.funds {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fund-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 1% 0;
+  align-items: center;
+}
+
+@media (min-width: 728px) {
+  .fund-item {
+    width: calc(40% - 5px);
+    margin-right: 10%;
+  }
+
+  .fund-item:last-child {
+    margin-right: 0;
+  }
 }
