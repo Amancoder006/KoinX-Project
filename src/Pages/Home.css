@@ -60,6 +60,7 @@
 @media screen and (max-width: 768px) {
   .container {
     padding: 2% 2%;
+    margin-top: 80px;
   }
   .left-side,
   .right-side {

@@ -4,6 +4,9 @@ import NavBar from "../Components/NavBar";
 import Graph from "../Components/Graph";
 import Performance from "../Components/Performance";
 import Sentiments from "../Components/Sentiments";
+import About from "../Components/About";
+import Tokenomic from "../Components/Tokenomic";
+import Team from "../Components/Team";
 
 const tabs = [
   "Overview",
@@ -73,6 +76,21 @@ const Home = () => {
           {/* Sentiments */}
           <div className="box1" style={{ marginTop: "2%" }}>
             <Sentiments />
+          </div>
+
+          {/* About */}
+          <div className="box1" style={{ marginTop: "2%" }}>
+            <About />
+          </div>
+
+          {/* Token */}
+          <div className="box1" style={{ marginTop: "2%" }}>
+            <Tokenomic />
+          </div>
+
+          {/* Team */}
+          <div className="box1" style={{ marginTop: "2%" }}>
+            <Team />
           </div>
         </div>
         <div className="right-side"></div>

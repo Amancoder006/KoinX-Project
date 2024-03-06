@@ -89,9 +89,9 @@ const Sentiments = () => {
             <div className="percent-text">76%</div>
           </div>
           <div className="ranges">
-            {renderRange("Buys", 80, "red")}
-            {renderRange("Hold", 20, "green")}
-            {renderRange("Sell", 50, "grey")}
+            {renderRange("Buys", 76, "green")}
+            {renderRange("Sell", 8, "grey")}
+            {renderRange("Hold", 16, "red")}
           </div>
         </div>
       </div>
