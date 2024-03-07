@@ -8,9 +8,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
-      <Route path={`/`} element={<Home />} />
-      <Route path={`/bitcoin`} element={<Home coin={"bitcoin"} />} />
-      <Route path={`/ethereum`} element={<Home coin={"ethereum"} />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/bitcoin" element={<Home coin={"bitcoin"} />} />
+      <Route path="/ethereum" element={<Home coin={"ethereum"} />} />
     </Routes>
   </BrowserRouter>
 );
