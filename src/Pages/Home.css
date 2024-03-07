@@ -95,4 +95,8 @@
   .active1 {
     display: none;
   }
+  .box1 {
+    margin: 5% 0;
+    padding: 0 2%;
+  }
 }

@@ -63,8 +63,6 @@ const Home = ({ coin }) => {
     );
   });
 
-  console.log("coin nae-->", name);
-
   useEffect(() => {
     const fetchData = async () => {
       let res = await axios.get(
@@ -94,7 +92,7 @@ const Home = ({ coin }) => {
   }, [name]);
 
   return coinData && coinIcon ? (
-    <>
+    <div>
       <NavBar />
       <div className="container">
         <div className="top-line">
@@ -162,7 +160,7 @@ const Home = ({ coin }) => {
           <UmayLike data={data} />
         </div>
       </div>
-    </>
+    </div>
   ) : null;
 };
 
