@@ -10,6 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path={`/${str}`} element={<Home coin={str} />} />
+        <Route path={`/bitcoin`} element={<Home coin={"bitcoin"} />} />
       </Routes>
     </BrowserRouter>
   );
