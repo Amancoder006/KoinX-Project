@@ -10,10 +10,11 @@
 }
 
 .range-indicator {
+  width: 100%;
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
 }
 
 .text1 {

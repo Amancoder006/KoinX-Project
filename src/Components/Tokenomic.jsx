@@ -17,7 +17,7 @@ export const data = {
 
 const Tokenomic = () => {
   return (
-    <div className="perfrom-container">
+    <div className="token-container">
       <div className="heading">Tokenomics</div>
 
       <div style={{ marginTop: "2%" }}>

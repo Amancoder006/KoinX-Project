@@ -1,0 +1,47 @@
+.trending-container {
+  margin: 0;
+  padding: 1% 3%;
+}
+
+.heading {
+  font-size: 28px;
+  color: #000;
+  font-weight: 600;
+}
+
+.icon-name {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon-name img {
+  border-radius: 100px;
+  margin-right: 5%;
+}
+
+.coin-name {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.trend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.percent-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #202020;
+  font-size: 12px;
+  padding: 1% 2%;
+  border-radius: 5px;
+  font-weight: 500;
+}

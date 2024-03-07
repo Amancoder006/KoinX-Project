@@ -18,7 +18,7 @@ const arr = [
   },
 ];
 
-const About = () => {
+const About = ({ coinData }) => {
   const showBtn = () => {
     return (
       <div className="btn-container">
@@ -52,17 +52,12 @@ const About = () => {
   };
   return (
     <div className="about-container">
-      <div className="heading">About Bitcoin</div>
+      <div className="heading">About {coinData?.name}</div>
 
       <div className="details">
-        <div className="title1">What is Bitcoin?</div>
+        <div className="title1">What is {coinData?.name}?</div>
         <div className="desc1" style={{ marginTop: "1.5%" }}>
-          Bitcoin {"("}BTC{")"} is a cryptocurrency, a virtual currency designed
-          to act as money and a form of payment outside the control of any one
-          person, group, or entity, thus removing the need for third-party
-          involvement in financial transactions. It is rewarded to blockchain
-          miners for verifying transactions and can be purchased on several
-          exchanges.
+          {coinData.description.en}
         </div>
         <div className="title1" style={{ marginTop: "1.5%" }}>
           Lorem ipsum dolor sit

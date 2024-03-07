@@ -48,7 +48,7 @@ const Performance = () => {
   const rangeIndicator = (val) => {
     return (
       <div className="range-indicator">
-        <div className="left">
+        <div >
           <div className="text1">Today's Low</div>
           <div className="text2">42,653.44</div>
         </div>
@@ -68,7 +68,7 @@ const Performance = () => {
             </>
           )}
         </div>
-        <div className="right">
+        <div >
           <div className="text1">Today's Low</div>
           <div className="text2">42,653.44</div>
         </div>

@@ -24,3 +24,30 @@
   font-weight: 600;
   align-items: center;
 }
+
+.heading::first-letter {
+  text-transform: uppercase;
+}
+
+.percent-container-graph {
+  display: block;
+  align-items: center;
+  justify-content: flex-start;
+  color: #202020;
+  font-size: 12px;
+  padding: 1% 2%;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.percent-container-graph-text {
+  display: flex;
+  justify-content: center;
+  color: #202020;
+  /* font-size: 12px; */
+  padding: 0 1%;
+  border-radius: 5px;
+  font-weight: 500;
+  align-items: center;
+  margin-top: 1%;
+}

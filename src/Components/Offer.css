@@ -1,0 +1,22 @@
+.offer-container {
+  padding: 10% 10%;
+  background-color: #0052fe;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.title2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.title2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.offer-container img {
+  height: 200px;
+}
