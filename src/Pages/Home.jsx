@@ -29,6 +29,7 @@ const Home = ({ coin }) => {
   const [coinData, setCoinData] = useState(null);
   const [coinIcon, setCoinIcon] = useState("");
   const [tabIndex, setTabIndex] = useState(0);
+  const [alert, setAlert] = useState(false);
 
   const renderTabs = tabs.map((item, index) => {
     return (
@@ -65,24 +66,34 @@ const Home = ({ coin }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      let res = await axios.get(
-        "https://api.coingecko.com/api/v3/search/trending"
-      );
+      try {
+        let res = await axios.get(
+          "https://api.coingecko.com/api/v3/search/trending"
+        );
 
-      setData(res.data.coins);
+        setData(res.data.coins);
+      } catch (e) {
+        setAlert(true);
+        console.log("api err-->", e);
+      }
     };
 
     const fetchCoinData = async () => {
-      let res = await axios.get(
-        `https://api.coingecko.com/api/v3/simple/price?ids=${name}&vs_currencies=inr%2Cusd&include_24hr_change=true`
-      );
+      try {
+        let res = await axios.get(
+          `https://api.coingecko.com/api/v3/simple/price?ids=${name}&vs_currencies=inr%2Cusd&include_24hr_change=true`
+        );
 
-      let res1 = await axios.get(
-        `https://api.coingecko.com/api/v3/coins/${name}`
-      );
-      console.log("icon-->", res1);
-      setCoinIcon(res1.data);
-      setCoinData(res.data);
+        let res1 = await axios.get(
+          `https://api.coingecko.com/api/v3/coins/${name}`
+        );
+        console.log("icon-->", res1);
+        setCoinIcon(res1.data);
+        setCoinData(res.data);
+      } catch (e) {
+        setAlert(true);
+        console.log("err in api-->", e);
+      }
     };
 
     if (name) {
@@ -160,6 +171,10 @@ const Home = ({ coin }) => {
           <UmayLike data={data} />
         </div>
       </div>
+    </div>
+  ) : alert ? (
+    <div style={{ color: "#202020", fontWeight: "700", fontSize: "30px" }}>
+      API ERROR 404 NOT FOUND
     </div>
   ) : null;
 };
