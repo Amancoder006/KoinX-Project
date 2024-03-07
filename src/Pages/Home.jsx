@@ -146,7 +146,7 @@ const Home = ({ coin }) => {
           </div>
         </div>
         <div className="right-side">
-          <div className="box1">
+          <div className="box1" style={{ backgroundColor: "#0052fe" }}>
             <Offer />
           </div>
           <div className="box1" style={{ marginTop: "5%" }}>

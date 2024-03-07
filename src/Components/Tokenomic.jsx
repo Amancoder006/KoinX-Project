@@ -30,7 +30,7 @@ const Tokenomic = () => {
               options={{
                 responsive: true,
                 maintainAspectRatio: true,
-                cutout: 65,
+                cutout: 45,
               }}
             />
           </div>
