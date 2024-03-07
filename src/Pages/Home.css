@@ -48,6 +48,8 @@
   white-space: nowrap;
   margin-top: 3%;
   border-bottom: 1px solid #d8dadc;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scroll-content {

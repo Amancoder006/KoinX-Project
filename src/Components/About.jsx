@@ -40,7 +40,7 @@ const About = ({ coinData }) => {
                 <img src={item.img} alt="image" />
               </div>
 
-              <div className="right">
+              <div className="right-side1">
                 <div className="text">{item.text}</div>
                 <div className="right-btn">{showBtn()}</div>
               </div>
@@ -109,7 +109,7 @@ const About = ({ coinData }) => {
       </div>
 
       <div>
-        <div className="heading">Already Holding Bitcoin?</div>
+        <div className="heading">Already Holding {coinData?.name}?</div>
         <div>{renderCards()}</div>
       </div>
 

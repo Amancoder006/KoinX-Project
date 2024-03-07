@@ -136,4 +136,15 @@
   .per {
     margin-left: 1%;
   }
+  .percent {
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  .percent-text {
+    color: #1e8449;
+    font-weight: 600;
+    font-size: 18px;
+  }
 }
