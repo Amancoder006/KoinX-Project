@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={`/${str}`} element={<Home coin={str} />} />
+        <Route path={`/`} element={<Home coin={"bitcoin"} />} />
         <Route path={`/bitcoin`} element={<Home coin={"bitcoin"} />} />
         <Route path={`/ethereum`} element={<Home coin={"ethereum"} />} />
       </Routes>
